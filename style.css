@@ -1,0 +1,218 @@
+
+:root {
+    --color-principal: #008080; 
+    --color-secundario: #f0f0f0;
+    --color-fondo: #2c3e50; 
+    --color-texto-claro: #ffffff;
+    --color-texto-oscuro: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: var(--color-secundario);
+    color: var(--color-texto-oscuro);
+}
+
+
+header {
+    background-color: var(--color-fondo);
+    color: var(--color-texto-claro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.logo-placeholder {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--color-principal);
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: var(--color-texto-claro);
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+    font-weight: 400;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+
+.hero-section {
+    background: url('hero-image.jpg') no-repeat center center/cover; /* Reemplazar con imagen real */
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color-texto-claro);
+    position: relative;
+    padding: 20px;
+}
+
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--color-principal);
+    color: var(--color-texto-claro);
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #005f5f;
+    transform: translateY(-2px);
+}
+
+
+.modulos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 50px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.modulo-card {
+    background-color: var(--color-texto-claro);
+    border: 1px solid var(--color-secundario);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-texto-oscuro);
+    transition: box-shadow 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.modulo-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.modulo-card .icon {
+    font-size: 3em;
+    color: var(--color-principal);
+    margin-bottom: 10px;
+}
+
+.modulo-highlight {
+    background-color: var(--color-principal);
+    color: var(--color-texto-claro);
+}
+
+.modulo-highlight .icon {
+    color: var(--color-texto-claro);
+}
+
+
+footer {
+    background-color: var(--color-fondo);
+    color: var(--color-texto-claro);
+    padding: 20px 5%;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-size: 1.2em;
+}
+
+.tracking-info p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+
+@media (max-width: 900px) {
+    nav ul {
+        display: none; 
+    }
+    header {
+        justify-content: center;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .tracking-info {
+        margin-top: 15px;
+    }
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+

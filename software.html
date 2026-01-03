@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Química – CECyTEM</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            display: flex;
+            background: #eefaf7;
+        }
+
+        
+        .sidebar {
+            width: 250px;
+            background: #0f5c4b;
+            height: 100vh;
+            position: fixed;
+            padding-top: 20px;
+            color: white;
+            box-shadow: 3px 0 15px rgba(0,0,0,0.3);
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background: #23a68c;
+            padding-left: 35px;
+        }
+
+        
+        .content {
+            margin-left: 270px;
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 80px;
+            padding: 25px;
+            background: white;
+            border-radius: 8px;
+            border-left: 6px solid #0f5c4b;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #0f5c4b;
+        }
+
+        .top-links a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #0f5c4b;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="sidebar">
+        <a href="index.html">🏠 Inicio</a>
+        <a href="ingles.html">Inglés</a>
+        <a href="quimica.html">Química</a>
+        <a href="ciencias-sociales.html">Ciencias Sociales</a>
+        <a href="lengua.html">Lengua y Comunicación</a>
+        <a href="software.html"> Implementa Software</a>
+        <a href="cuestionarios.html">Cuestionarios</a>
+    </div>
+
+    <div class="content">
+        <h1>Implementa software de sistemas informáticos</h1>
+
+        
+        <div class="top-links">
+            <a href="#pro">Fundamentos de bases de datos</a>
+            <a href="#teo">Modelo relacional</a>
+            <a href="#clas">Diseño de base de datos</a>
+            <a href="#met">Lenguaje SQL</a>
+            <a href="#con">Consultas SQL </a>
+            <a href="#ley">Administración de bases de datos</a>
+            <a href="#temp">Seguridad en bases de datos</a>
+            <a href="#us">Usos de bases de datos en aplicaciones </a>
+            
+        </div>
+        <br>
+        <br>
+        <section id="pro">
+            <h2>Fundamentos de bases de datos </h2>
+            <p><strong>¿Qué es una base de datos?</strong></p>
+
+<p>Una base de datos es una colección organizada de información estructurada, 
+    almacenada electrónicamente, que permite gestionarla, acceder a ella,
+     actualizarla y analizarla de forma eficiente a través de un sistema de gestión de bases de 
+     datos (DBMS). </p>
+<p><strong>Tipos de bases de datos:</strong></p>
+<p><i><strong>Relacionales:</strong></i>Las bases de datos relacionales organizan la información en <i>tablas con filas 
+    y columnas,</i> usan SQL y mantienen relaciones entre los datos (ejemplo: MySQL).</p>
+<p><i><strong>No relacionales:</strong></i>Las bases de datos no relacionales no usan tablas tradicionales, son más <i>flexibles</i> y guardan la información en documentos, 
+    grafos o pares clave-valor (ejemplo: MongoDB).</p>
+
+        </section>
+
+        <section id="teo">
+            <h2>Modelo relacional</h2>
+        <p><i><strong>Base de datos relacional</strong></i></p>
+
+<p>Organiza la información en <strong>relacionadas entre sí.</strong></p>
+<p><i><strong>Elementos principales </strong></i></p>
+<p><i>Tabla:</i>Estructura donde se guardan los datos.</p>
+<p><i>Registro:</i>Fila de la tabla.</p>
+<p><i>Campo:</i>Columna de la tabla.</p>
+<p><strong><i>Claves</i></strong></p>
+<p><i>Clave primaria:</i>Identifica de forma única un registro.</p>
+<p><i>Clave foránea:</i>Conecta una tabla con otra.</p>
+<p><i><strong>Tipos de relaciones</strong></i></p>
+<p><i>1.-Uno a uno </i></p>
+<p><i>2.-Uno a muchos</i></p>
+<p><i>3.-Muchos a muchos</i></p>
+
+        </section>
+
+        <section id="clas">
+            <h2>Diseño de bases de datos</h2>
+            <p><i><strong>Análisis de requerimientos</strong></i></p>
+
+<p>Identificar que información necesita el sistema.</p>
+<p><i><strong>Entidades y atributos</strong></i></p>
+<p><strong>Entidad:</strong>Objeto del mundo real (<i>Ejemplo.alumno</i>)</p>
+<p><strong>Atributo:</strong>Característica de la entidad (<i>Ejemplo.edad del alumno</i>)</p>
+<p><i><strong>Diagramas Entidad-Relación (E-R)</strong></i></p>
+<p>Representación gráfica del diseño de la base de datos.</p>
+        </section>
+        <section id="met">
+            <h2>Lenguaje SQL</h2>
+            <p><strong>¿Qué es SQL?</strong></p>
+
+<p>Lenguaje usado para <strong>crear, consultar,y administrar bases de datos.</strong></p>
+<p><i><strong>Tipos de sentencias</strong></i></p>
+<p><strong>DDL:</strong>CREATE, ALTER, DROP.</p>
+<p><strong>DML:</strong>INSERT, UPDATE, DELETE.</p>
+<p><strong>DQL:</strong>SELECT</p>
+<p><strong><i>Tipos de datos</i></strong></p>
+<p>1.-INT -> Entero</p>
+<p>2.-VARCHAR -> Cadenas de caracteres. </p>
+<p>3.-DATE -> Tipo de datos de fecha.</p>
+<p>4.-FLOAT -> Tipo de dato númerico con decimales.</p>
+        </section>
+        <section id="con">
+            <h2>Consultas SQL</h2>
+            <p><i><strong>Consulta básica</strong></i></p>
+
+<p><big>SELECT*FROM </big> alumnos;</p>
+<p><strong><i>Uso de WHERE</i></strong></p>
+<p><big>SELECT*FROM </big> alumnos <big>WHERE</big> edad > 16;</p>
+<p><strong>Operadores</strong></p>
+<p><i>Lógicos:</i>AND, OR, NOT.</p>
+<p><i>Relacionales:</i> >, < , =.</p>
+
+        </section>
+        <section id="ley">
+            <h2>Administración de bases de datos</h2>
+            <p><strong><i>Usuarios y permisos</i></strong></p>
+            <p>Permiten controlar quién accede a la información.</p>
+            <p><strong><i>Respaldo (backup)</i></strong></p>
+            <p>Copia de seguridad de la base de datos.</p>
+            <p><strong><i>Importación y exportación</i></strong></p>
+            <p>Mover datos entre sistemas.</p>
+        </section>
+        <section id="temp">
+            <h2>Seguridad en bases de datos</h2>
+            <p><strong><i>Seguridad de la información</i></strong></p>
+            <p>Protección de los datos contra accesos no autorizados.</p>
+            <p><i><strong>Riesgos comunes</strong></i></p>
+            <p>1.-Virus.</p>
+            <p>2.-Robo de información.</p>
+            <p>3.-Errores humanos.</p>
+            <p><i><strong>Buenas prácticas</strong></i></p>
+            <p>1.-Contraseñas seguras.</p>
+            <p>2.-Respaldo periódico.</p>
+            <p>3.-Uso de permisos adecuados.</p>
+        </section>
+        <section id="us">
+            <h2>Usos de bases de datos en aplicaciones </h2>
+            <p><strong><i>Uso en sistemas reales </i></strong></p>
+            <p>1.-Páginas web.</p>
+            <p>2.-Sistemas escolares.</p>
+            <p>3.-Inventarios.</p>
+            <p><strong><i>Conexión con aplicaciones </i></strong></p>
+            <p>Se usa el método de <i>tres capas</i>:</p>
+            <p>1.-Interfaz de usuario.</p>
+            <p>2.-Lógica de aplicación.</p>
+            <p>3.-Base de datos.</p>
+        </section>
+       
+    </div>
+
+</body>
+</html>

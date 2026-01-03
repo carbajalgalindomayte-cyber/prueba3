@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Cuestionarios - CECyTEM</title>
+
+<style>
+body{
+    margin:0;
+    font-family:"Segoe UI", sans-serif;
+    background:#eefaf7;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar{
+    width:250px;
+    height:100vh;
+    background:#0f5c4b;
+    position:fixed;
+    top:0;
+    left:0;
+    padding-top:20px;
+    color:white;
+    box-shadow:3px 0 15px rgba(0,0,0,.3);
+}
+
+.sidebar a{
+    display:block;
+    padding:15px 20px;
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+}
+
+.sidebar a:hover{
+    background:#23a68c;
+}
+
+/* ===== CONTENIDO ===== */
+.content{
+    margin-left:270px;
+    padding:40px;
+    max-width:calc(100% - 270px);
+    box-sizing:border-box;
+}
+
+h1,h2{
+    color:#0f5c4b;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    margin-bottom:60px;
+    box-shadow:0 4px 12px rgba(0,0,0,.12);
+    max-width:900px;
+}
+
+.question{
+    margin-bottom:12px;
+}
+
+button{
+    margin-top:15px;
+    padding:10px 20px;
+    background:#0f5c4b;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#14836d;
+}
+
+.result{
+    margin-top:15px;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== MENÚ ===== -->
+<div class="sidebar">
+    <a href="Index.html">🏠 Inicio</a>
+    <a href="ingles.html">Inglés</a>
+    <a href="quimica.html">Química</a>
+    <a href="ciencias-sociales.html">Ciencias Sociales</a>
+    <a href="lengua.html">Lengua y Comunicación</a>
+    <a href="software.html">Implementa Software</a>
+    <a href="#" class="active">Cuestionarios</a>
+</div>
+
+<!-- ===== CONTENIDO ===== -->
+<div class="content">
+
+<h1>Cuestionarios</h1>
+
+<!-- ===== INGLÉS ===== -->
+<h2>Inglés</h2>
+<form class="card" id="ingles">
+    <!-- TUS 20 PREGUNTAS DE INGLÉS (SIN CAMBIOS) -->
+    <!-- 👇 EJEMPLO -->
+    <div class="question">1. Forma correcta del verbo to be para "I":<br>
+        <input type="radio" name="e1" value="c"> am<br>
+        <input type="radio" name="e1" value="a"> is<br>
+        <input type="radio" name="e1" value="b"> are
+    </div>
+    <div class="question">2. Simple Present se usa para:<br>
+<input type="radio" name="e2" value="b"> rutinas<br>
+<input type="radio" name="e2" value="a"> pasado<br>
+<input type="radio" name="e2" value="c"> futuro
+</div>
+
+
+<div class="question">3. Adverbio de frecuencia:<br>
+<input type="radio" name="e3" value="b"> always<br>
+<input type="radio" name="e3" value="a"> now<br>
+<input type="radio" name="e3" value="c"> yesterday
+</div>
+
+
+<div class="question">4. Verbo modal:<br>
+<input type="radio" name="e4" value="b"> can<br>
+<input type="radio" name="e4" value="a"> eat<br>
+<input type="radio" name="e4" value="c"> play
+</div>
+
+
+<div class="question">5. "She ___ happy":<br>
+<input type="radio" name="e5" value="c"> is<br>
+<input type="radio" name="e5" value="a"> am<br>
+<input type="radio" name="e5" value="b"> are
+</div>
+
+
+<div class="question">6. Pronombre personal:<br>
+<input type="radio" name="e6" value="b"> he<br>
+<input type="radio" name="e6" value="a"> my<br>
+<input type="radio" name="e6" value="c"> mine
+</div>
+
+
+<div class="question">7. Adjetivo posesivo:<br>
+<input type="radio" name="e7" value="c"> my<br>
+<input type="radio" name="e7" value="a"> me<br>
+<input type="radio" name="e7" value="b"> mine
+</div>
+
+
+<div class="question">8. "There are" indica:<br>
+<input type="radio" name="e8" value="b"> plural<br>
+<input type="radio" name="e8" value="a"> singular<br>
+<input type="radio" name="e8" value="c"> pasado
+</div>
+
+
+<div class="question">9. Pronombre demostrativo:<br>
+<input type="radio" name="e9" value="a"> this<br>
+<input type="radio" name="e9" value="b"> he<br>
+<input type="radio" name="e9" value="c"> my
+</div>
+
+
+<div class="question">10. study (3ra persona):<br>
+<input type="radio" name="e10" value="b"> studies<br>
+<input type="radio" name="e10" value="a"> studys<br>
+<input type="radio" name="e10" value="c"> study
+</div>
+
+
+<div class="question">11. "They ___ friends":<br>
+<input type="radio" name="e11" value="b"> are<br>
+<input type="radio" name="e11" value="a"> is<br>
+<input type="radio" name="e11" value="c"> am
+</div>
+
+
+<div class="question">12. Never significa:<br>
+<input type="radio" name="e12" value="c"> nunca<br>
+<input type="radio" name="e12" value="a"> siempre<br>
+<input type="radio" name="e12" value="b"> a veces
+</div>
+
+
+<div class="question">13. Modal para obligación:<br>
+<input type="radio" name="e13" value="b"> must<br>
+<input type="radio" name="e13" value="a"> may<br>
+<input type="radio" name="e13" value="c"> can
+</div>
+
+
+<div class="question">14. I ___ play soccer:<br>
+<input type="radio" name="e14" value="a"> play<br>
+<input type="radio" name="e14" value="b"> plays<br>
+<input type="radio" name="e14" value="c"> played
+</div>
+
+
+<div class="question">15. She ___ every day:<br>
+<input type="radio" name="e15" value="b"> works<br>
+<input type="radio" name="e15" value="a"> work<br>
+<input type="radio" name="e15" value="c"> working
+</div>
+
+
+<div class="question">16. Possessive adjective of "they":<br>
+<input type="radio" name="e16" value="c"> their<br>
+<input type="radio" name="e16" value="a"> them<br>
+<input type="radio" name="e16" value="b"> theirs
+</div>
+
+
+<div class="question">17. Could expresa:<br>
+<input type="radio" name="e17" value="b"> posibilidad<br>
+<input type="radio" name="e17" value="a"> rutina<br>
+<input type="radio" name="e17" value="c"> pasado
+</div>
+
+
+<div class="question">18. That indica:<br>
+<input type="radio" name="e18" value="a"> lejanía<br>
+<input type="radio" name="e18" value="b"> cercanía<br>
+<input type="radio" name="e18" value="c"> tiempo
+</div>
+
+
+<div class="question">19. Always va:<br>
+<input type="radio" name="e19" value="b"> antes del verbo<br>
+<input type="radio" name="e19" value="a"> al final<br>
+<input type="radio" name="e19" value="c"> después del sustantivo
+</div>
+
+
+<div class="question">20. We ___ students:<br>
+<input type="radio" name="e20" value="b"> are<br>
+<input type="radio" name="e20" value="a"> is<br>
+<input type="radio" name="e20" value="c"> am
+</div>
+
+
+    
+
+    <button type="button" onclick="calificarIngles()">Calificar Inglés</button>
+    <div id="resultEnglish" class="result"></div>
+</form>
+
+<!-- ===== CIENCIAS SOCIALES ===== -->
+<h2>Ciencias Sociales</h2>
+<form class="card" id="sociales">
+    <div class="question">1. Zonas protegidas son:<br>
+<input type="radio" name="s1" value="b"> áreas naturales<br>
+<input type="radio" name="s1" value="a"> ciudades<br>
+<input type="radio" name="s1" value="c"> fábricas
+</div>
+
+
+<div class="question">2. Multiculturalidad es:<br>
+<input type="radio" name="s2" value="b"> varias culturas<br>
+<input type="radio" name="s2" value="a"> una cultura<br>
+<input type="radio" name="s2" value="c"> discriminación
+</div>
+
+
+<div class="question">3. Interculturalidad promueve:<br>
+<input type="radio" name="s3" value="b"> respeto<br>
+<input type="radio" name="s3" value="a"> exclusión<br>
+<input type="radio" name="s3" value="c"> desigualdad
+</div>
+
+
+<div class="question">4. Diversidad étnica es:<br>
+<input type="radio" name="s4" value="b"> variedad de grupos<br>
+<input type="radio" name="s4" value="a"> un idioma<br>
+<input type="radio" name="s4" value="c"> una religión
+</div>
+
+
+<div class="question">5. Diversidad social incluye:<br>
+<input type="radio" name="s5" value="b"> diferencias sociales<br>
+<input type="radio" name="s5" value="a"> solo edad<br>
+<input type="radio" name="s5" value="c"> solo género
+</div>
+
+
+<div class="question">6. Género se refiere a:<br>
+<input type="radio" name="s6" value="b"> roles sociales<br>
+<input type="radio" name="s6" value="a"> estatura<br>
+<input type="radio" name="s6" value="c"> clima
+</div>
+
+
+<div class="question">7. Organización formal:<br>
+<input type="radio" name="s7" value="b"> escuela<br>
+<input type="radio" name="s7" value="a"> amigos<br>
+<input type="radio" name="s7" value="c"> vecinos
+</div>
+
+
+<div class="question">8. Función legislativa:<br>
+<input type="radio" name="s8" value="b"> crear leyes<br>
+<input type="radio" name="s8" value="a"> aplicar leyes<br>
+<input type="radio" name="s8" value="c"> juzgar
+</div>
+
+
+<div class="question">9. Derechos protegen:<br>
+<input type="radio" name="s9" value="b"> dignidad<br>
+<input type="radio" name="s9" value="a"> castigos<br>
+<input type="radio" name="s9" value="c"> impuestos
+</div>
+
+
+<div class="question">10. Normas jurídicas son:<br>
+<input type="radio" name="s10" value="b"> obligatorias<br>
+<input type="radio" name="s10" value="a"> opcionales<br>
+<input type="radio" name="s10" value="c"> consejos
+</div>
+
+
+<div class="question">11. Investigación documental usa:<br>
+<input type="radio" name="s11" value="b"> libros<br>
+<input type="radio" name="s11" value="a"> experimentos<br>
+<input type="radio" name="s11" value="c"> encuestas
+</div>
+
+
+<div class="question">12. Investigación de campo se hace:<br>
+<input type="radio" name="s12" value="b"> en el lugar<br>
+<input type="radio" name="s12" value="a"> en libros<br>
+<input type="radio" name="s12" value="c"> laboratorio
+</div>
+
+
+<div class="question">13. Impuestos sirven para:<br>
+<input type="radio" name="s13" value="b"> servicios públicos<br>
+<input type="radio" name="s13" value="a"> castigos<br>
+<input type="radio" name="s13" value="c"> empresas
+</div>
+
+
+<div class="question">14. Programas del bienestar apoyan a:<br>
+<input type="radio" name="s14" value="b"> población<br>
+<input type="radio" name="s14" value="a"> empresas<br>
+<input type="radio" name="s14" value="c"> bancos
+</div>
+
+
+<div class="question">15. México tiene:<br>
+<input type="radio" name="s15" value="b"> 32 entidades<br>
+<input type="radio" name="s15" value="a"> 20 estados<br>
+<input type="radio" name="s15" value="c"> 30 estados
+</div>
+
+
+<div class="question">16. CDMX es:<br>
+<input type="radio" name="s16" value="b"> entidad federativa<br>
+<input type="radio" name="s16" value="a"> municipio<br>
+<input type="radio" name="s16" value="c"> país
+</div>
+
+
+<div class="question">17. Poder judicial:<br>
+<input type="radio" name="s17" value="b"> interpreta leyes<br>
+<input type="radio" name="s17" value="a"> crea leyes<br>
+<input type="radio" name="s17" value="c"> gobierna
+</div>
+
+
+<div class="question">18. Poder ejecutivo:<br>
+<input type="radio" name="s18" value="b"> aplica leyes<br>
+<input type="radio" name="s18" value="a"> juzga<br>
+<input type="radio" name="s18" value="c"> crea leyes
+</div>
+
+
+<div class="question">19. Organizaciones informales:<br>
+<input type="radio" name="s19" value="b"> sin reglas escritas<br>
+<input type="radio" name="s19" value="a"> empresas<br>
+<input type="radio" name="s19" value="c"> escuelas
+</div>
+
+
+<div class="question">20. Diversidad social busca:<br>
+<input type="radio" name="s20" value="b"> igualdad<br>
+<input type="radio" name="s20" value="a"> exclusión<br>
+<input type="radio" name="s20" value="c"> castigo
+</div>
+
+   <button type="button" onclick="calificarSocial()">
+  Calificar Sociales
+</button>
+
+<div id="resultSocial"></div>
+
+</form>
+
+<!-- ===== QUÍMICA ===== -->
+<h2>Química</h2>
+<form class="card" id="quimica">
+  <div class="question">1. ¿Cuál es una propiedad física?<br>
+<input type="radio" name="q1" value="c"> Densidad<br>
+<input type="radio" name="q1" value="a"> Combustión<br>
+<input type="radio" name="q1" value="b"> Oxidación<br>
+<input type="radio" name="q1" value="d"> Fermentación
+</div>
+
+
+<div class="question">2. La teoría cinética molecular afirma que:<br>
+<input type="radio" name="q2" value="b"> Las partículas están en movimiento constante<br>
+<input type="radio" name="q2" value="a"> Están en reposo<br>
+<input type="radio" name="q2" value="c"> No tienen energía<br>
+<input type="radio" name="q2" value="d"> Los gases no tienen volumen
+</div>
+
+
+<div class="question">3. Una mezcla homogénea se caracteriza por:<br>
+<input type="radio" name="q3" value="a"> Tener composición uniforme<br>
+<input type="radio" name="q3" value="b"> Fases visibles<br>
+<input type="radio" name="q3" value="c"> Solo elementos<br>
+<input type="radio" name="q3" value="d"> No separarse
+</div>
+
+
+<div class="question">4. Método para separar sólido insoluble de un líquido:<br>
+<input type="radio" name="q4" value="b"> Filtración<br>
+<input type="radio" name="q4" value="a"> Destilación<br>
+<input type="radio" name="q4" value="c"> Evaporación<br>
+<input type="radio" name="q4" value="d"> Sublimación
+</div>
+
+
+<div class="question">5. Conservación de la energía:<br>
+<input type="radio" name="q5" value="c"> No se crea ni se destruye<br>
+<input type="radio" name="q5" value="a"> Se crea del calor<br>
+<input type="radio" name="q5" value="b"> Se destruye<br>
+<input type="radio" name="q5" value="d"> Solo en sistemas aislados
+</div>
+
+
+<div class="question">6. Energía asociada al movimiento:<br>
+<input type="radio" name="q6" value="b"> Cinética<br>
+<input type="radio" name="q6" value="a"> Térmica<br>
+<input type="radio" name="q6" value="c"> Química<br>
+<input type="radio" name="q6" value="d"> Potencial
+</div>
+
+
+<div class="question">7. Primera ley de la termodinámica:<br>
+<input type="radio" name="q7" value="c"> Cambia por calor y trabajo<br>
+<input type="radio" name="q7" value="a"> Temperatura constante<br>
+<input type="radio" name="q7" value="b"> Calor fluye siempre<br>
+<input type="radio" name="q7" value="d"> Calor es masa
+</div>
+
+
+<div class="question">8. Unidad científica de temperatura:<br>
+<input type="radio" name="q8" value="b"> Kelvin<br>
+<input type="radio" name="q8" value="a"> Joule<br>
+<input type="radio" name="q8" value="c"> Pascal<br>
+<input type="radio" name="q8" value="d"> Watt
+</div>
+
+
+<div class="question">9. El calor es:<br>
+<input type="radio" name="q9" value="b"> Energía transferida por diferencia de temperatura<br>
+<input type="radio" name="q9" value="a"> Velocidad de partículas<br>
+<input type="radio" name="q9" value="c"> Energía química<br>
+<input type="radio" name="q9" value="d"> Fuerza
+</div>
+
+
+<div class="question">10. Partícula con carga negativa:<br>
+<input type="radio" name="q10" value="c"> Electrón<br>
+<input type="radio" name="q10" value="a"> Protón<br>
+<input type="radio" name="q10" value="b"> Neutrón<br>
+<input type="radio" name="q10" value="d"> Positrón
+</div>
+
+
+<div class="question">11. El número atómico corresponde a:<br>
+<input type="radio" name="q11" value="c"> Cantidad de protones<br>
+<input type="radio" name="q11" value="a"> Neutrones<br>
+<input type="radio" name="q11" value="b"> Protones y electrones<br>
+<input type="radio" name="q11" value="d"> Masa
+</div>
+
+
+<div class="question">12. Transferencia de calor por ondas:<br>
+<input type="radio" name="q12" value="c"> Radiación<br>
+<input type="radio" name="q12" value="a"> Conducción<br>
+<input type="radio" name="q12" value="b"> Convección<br>
+<input type="radio" name="q12" value="d"> Tratamiento térmico
+</div>
+
+
+<div class="question">13. Separar líquidos con distinto punto de ebullición:<br>
+<input type="radio" name="q13" value="c"> Destilación<br>
+<input type="radio" name="q13" value="a"> Decantación<br>
+<input type="radio" name="q13" value="b"> Filtración<br>
+<input type="radio" name="q13" value="d"> Cristalización
+</div>
+
+
+<div class="question">14. Al calentar un gas aumenta:<br>
+<input type="radio" name="q14" value="b"> Velocidad de partículas<br>
+<input type="radio" name="q14" value="a"> Protones<br>
+<input type="radio" name="q14" value="c"> Electrones<br>
+<input type="radio" name="q14" value="d"> Neutrones
+</div>
+
+
+<div class="question">15. Mezcla heterogénea:<br>
+<input type="radio" name="q15" value="c"> Componentes visibles<br>
+<input type="radio" name="q15" value="a"> Una fase<br>
+<input type="radio" name="q15" value="b"> Uniforme<br>
+<input type="radio" name="q15" value="d"> No separable
+</div>
+
+
+<div class="question">16. Las proteínas están formadas por:<br>
+<input type="radio" name="q16" value="b"> Aminoácidos<br>
+<input type="radio" name="q16" value="a"> Ácidos grasos<br>
+<input type="radio" name="q16" value="c"> Nucleótidos<br>
+<input type="radio" name="q16" value="d"> Monosacáridos
+</div>
+
+
+<div class="question">17. Función principal de los carbohidratos:<br>
+<input type="radio" name="q17" value="c"> Fuente de energía<br>
+<input type="radio" name="q17" value="a"> Información genética<br>
+<input type="radio" name="q17" value="b"> Membranas<br>
+<input type="radio" name="q17" value="d"> Catalizar
+</div>
+
+
+<div class="question">18. ADN y ARN son:<br>
+<input type="radio" name="q18" value="d"> Ácidos nucleicos<br>
+<input type="radio" name="q18" value="a"> Proteínas<br>
+<input type="radio" name="q18" value="b"> Lípidos<br>
+<input type="radio" name="q18" value="c"> Carbohidratos
+</div>
+
+
+<div class="question">19. Transferencia de calor en líquidos y gases:<br>
+<input type="radio" name="q19" value="b"> Convección<br>
+<input type="radio" name="q19" value="a"> Radiación<br>
+<input type="radio" name="q19" value="c"> Conducción<br>
+<input type="radio" name="q19" value="d"> Vibración
+</div>
+
+
+<div class="question">20. Si un sistema recibe calor y no hace trabajo:<br>
+<input type="radio" name="q20" value="c"> Aumenta<br>
+<input type="radio" name="q20" value="a"> Disminuye<br>
+<input type="radio" name="q20" value="b"> Igual<br>
+<input type="radio" name="q20" value="d"> Se convierte en masa
+</div>
+
+  <button type="button" onclick="calificarQuimica()">
+  Calificar Química
+</button>
+
+<div id="resultChemistry"></div>
+
+</form>
+
+<!-- ===== LENGUA ===== -->
+<h2>Lengua y Comunicación</h2>
+<form class="card" id="lengua">
+  <div class="question">
+  1. ¿Cuál es el elemento que inicia el proceso de comunicación?<br>
+<input type="radio" name="lengua1" value="a">Receptor<br>
+<input type="radio" name="lengua1" value="b">Mensaje<br>
+<input type="radio" name="lengua1" value="c">Emisor<br>
+<input type="radio" name="lengua1" value="d">Canal
+</div>
+
+
+<div class="question">
+2. La función del lenguaje que expresa sentimientos es:<br>
+<input type="radio" name="lengua2" value="a">Referencial<br>
+<input type="radio" name="lengua2" value="b">  Apelativa<br>
+<input type="radio" name="lengua2" value="c">  Emotiva<br>
+<input type="radio" name="lengua2" value="d">  Metalingüística
+</div>
+
+
+<div class="question">
+3. ¿Qué es el lenguaje?<br>
+<input type="radio" name="lengua3" value="a"> Un sistema de signos escrito<br>
+<input type="radio" name="lengua3" value="b">  La capacidad humana de comunicarse<br>
+<input type="radio" name="lengua3" value="c">  El uso individual del idioma<br>
+<input type="radio" name="lengua3" value="d">  Un conjunto de reglas gramaticales
+</div>
+
+
+<div class="question">
+4. La lengua se define como:<br>
+<input type="radio" name="lengua4" value="a"> El habla cotidiana<br>
+<input type="radio" name="lengua4" value="b">  El uso personal del idioma<br>
+<input type="radio" name="lengua4" value="c">  Un sistema de signos compartido por una comunidad<br>
+<input type="radio" name="lengua4" value="d">  La forma de escribir correctamente
+</div>
+
+
+<div class="question">
+5. ¿Qué tipo de texto narra hechos reales o ficticios?<br>
+<input type="radio" name="lengua5" value="a">  Descriptivo<br>
+<input type="radio" name="lengua5" value="b">  Argumentativo<br>
+<input type="radio" name="lengua5" value="c">  Expositivo<br>
+<input type="radio" name="lengua5" value="d">  Narrativo
+</div>
+
+
+<div class="question">
+6. Un texto que explica información de forma objetiva es:<br>
+<input type="radio" name="lengua6" value="a">  Argumentativo<br>
+<input type="radio" name="lengua6" value="b">  Expositivo<br>
+<input type="radio" name="lengua6" value="c">  Narrativo<br>
+<input type="radio" name="lengua6" value="d">  Literario
+</div>
+
+
+<div class="question">
+7. La idea principal de un texto es:<br>
+<input type="radio" name="lengua7" value="a">  La más larga<br>
+<input type="radio" name="lengua7" value="b">  La que aparece al final<br>
+<input type="radio" name="lengua7" value="c">  La más importante<br>
+<input type="radio" name="lengua7" value="d">  La menos relevante
+</div>
+
+
+<div class="question">
+8. ¿Qué es la coherencia en un texto?<br>
+<input type="radio" name="lengua8" value="a">  Uso correcto de signos<br>
+<input type="radio" name="lengua8" value="b">  Relación lógica entre las ideas<br>
+<input type="radio" name="lengua8" value="c">  Uso de mayúsculas<br>
+<input type="radio" name="lengua8" value="d">  Tamaño del texto
+</div>
+
+
+<div class="question">
+9. ¿Cuál de las siguientes es un conector lógico?<br>
+<input type="radio" name="lengua9" value="a">  Mesa<br>
+<input type="radio" name="lengua9" value="b">  Perro<br>
+<input type="radio" name="lengua9" value="c">  Porque<br>
+<input type="radio" name="lengua9" value="d">  Escuela
+</div>
+
+
+<div class="question">
+10. ¿Cuál palabra es un sustantivo?<br>
+<input type="radio" name="lengua10" value="a">  Correr<br>
+<input type="radio" name="lengua10" value="b">  Bonito<br>
+<input type="radio" name="lengua10" value="c">  Rápidamente<br>
+<input type="radio" name="lengua10" value="d">  Libro
+</div>
+
+
+<div class="question">
+11. ¿Qué palabra es un verbo?<br>
+<input type="radio" name="lengua11" value="a">  Casa<br>
+<input type="radio" name="lengua11" value="b">  Comer<br>
+<input type="radio" name="lengua11" value="c">  Azul<br>
+<input type="radio" name="lengua11" value="d">  Lento
+</div>
+
+
+<div class="question">
+12. ¿Para qué sirve la coma (,)?<br>
+<input type="radio" name="lengua12" value="a">  Finalizar un texto<br>
+<input type="radio" name="lengua12" value="b">  Separar ideas dentro de una oración<br>
+<input type="radio" name="lengua12" value="c">  Iniciar un párrafo<br>
+<input type="radio" name="lengua12" value="d">  Cambiar de tema
+</div>
+
+
+<div class="question">
+13. ¿Qué es la exposición oral?<br>
+<input type="radio" name="lengua13" value="a">  Leer en silencio<br>
+<input type="radio" name="lengua13" value="b">  Presentar un tema ante un público<br>
+<input type="radio" name="lengua13" value="c">  Escribir un resumen<br>
+<input type="radio" name="lengua13" value="d">  Copiar información
+</div>
+
+
+<div class="question">
+14. El género literario que expresa sentimientos es:<br>
+<input type="radio" name="lengua14" value="a">  Narrativo<br>
+<input type="radio" name="lengua14" value="b">  Dramático<br>
+<input type="radio" name="lengua14" value="c">  Expositivo<br>
+<input type="radio" name="lengua14" value="d">  Lírico
+</div>
+
+
+<div class="question">
+15. ¿Qué es un texto argumentativo?<br>
+<input type="radio" name="lengua15" value="a">  Describe un objeto<br>
+<input type="radio" name="lengua15" value="b">  Cuenta una historia<br>
+<input type="radio" name="lengua15" value="c">  Defiende una opinión con razones<br>
+<input type="radio" name="lengua15" value="d">  Informa datos científicos
+</div>
+
+
+<div class="question">
+16. ¿Qué registro del lenguaje se usa en la escuela?<br>
+<input type="radio" name="lengua16" value="a">  Vulgar<br>
+<input type="radio" name="lengua16" value="b">  Informal<br>
+<input type="radio" name="lengua16" value="c">  Técnico<br>
+<input type="radio" name="lengua16" value="d">  Formal
+</div>
+
+
+<div class="question">
+17. ¿Qué es un resumen?<br>
+<input type="radio" name="lengua17" value="a">  Copiar un texto completo<br>
+<input type="radio" name="lengua17" value="b">  Un texto corto con las ideas principales<br>
+<input type="radio" name="lengua17" value="c">  Una opinión personal<br>
+<input type="radio" name="lengua17" value="d">  Un texto más largo
+</div>
+
+
+<div class="question">
+18. ¿Qué signo se usa para hacer preguntas en español?<br>
+<input type="radio" name="lengua18" value="a">  ¡!<br>
+<input type="radio" name="lengua18" value="b">  …<br>
+<input type="radio" name="lengua18" value="c">  ¿?<br>
+<input type="radio" name="lengua18" value="d">  ;;
+</div>
+
+
+<div class="question">
+19. ¿Cuál es una característica de la escucha activa?<br>
+<input type="radio" name="lengua19" value="a">  Interrumpir<br>
+<input type="radio" name="lengua19" value="b">  Ignorar al hablante<br>
+<input type="radio" name="lengua19" value="c">  Prestar atención y respetar turnos<br>
+<input type="radio" name="lengua19" value="d">  Hablar más fuerte
+</div>
+
+
+<div class="question">
+20. ¿Qué es la literatura?<br>
+<input type="radio" name="lengua20" value="a">  Lenguaje matemático<br>
+<input type="radio" name="lengua20" value="b">  Lenguaje científico<br>
+<input type="radio" name="lengua20" value="c">  Uso artístico del lenguaje<br>
+<input type="radio" name="lengua20" value="d">  Lenguaje técnico
+</div>
+
+
+   <button type="button" onclick="calificarLengua()">
+  Calificar Lengua
+</button>
+
+
+    <div id="resLengua" class="result"></div>
+</form>
+
+<!-- ===== SOFTWARE ===== -->
+<h2>Implementa Software</h2>
+<form class="card" id="software">
+  <div class="question">
+1. ¿Qué es una base de datos?<br>
+<input type="radio" name="soft1" value="a">  Un programa para escribir documentos<br>
+<input type="radio" name="soft1" value="b">  Un conjunto de información organizada digitalmente<br>
+<input type="radio" name="soft1" value="c">  Un dispositivo de almacenamiento físico<br>
+<input type="radio" name="soft1" value="d">  Un sistema operativo
+</div>
+
+
+<div class="question">
+2. ¿Cuál es la principal ventaja de usar una base de datos?<br>
+<input type="radio" name="soft2" value="a">  Ocupa más espacio<br>
+<input type="radio" name="soft2" value="b">  Dificulta el acceso a la información<br>
+<input type="radio" name="soft2" value="c">  Facilita el almacenamiento y consulta de datos<br>
+<input type="radio" name="soft2" value="d">  Solo funciona en internet
+</div>
+
+
+<div class="question">
+3. ¿Qué es un Sistema Gestor de Bases de Datos (SGBD)?<br>
+<input type="radio" name="soft3" value="a">  Un lenguaje de programación<br>
+<input type="radio" name="soft3" value="b">  Un conjunto de tablas<br>
+<input type="radio" name="soft3" value="c">  Un software para crear y administrar bases de datos<br>
+<input type="radio" name="soft3" value="d">  Un tipo de hardware
+</div>
+
+
+<div class="question">
+4. ¿Cuál de los siguientes es un SGBD?<br>
+<input type="radio" name="soft4" value="a">  Windows<br>
+<input type="radio" name="soft4" value="b">  MySQL<br>
+<input type="radio" name="soft4" value="c">  Word<br>
+<input type="radio" name="soft4" value="d">  Excel
+</div>
+
+
+<div class="question">
+5. En una base de datos relacional, la información se organiza en:<br>
+<input type="radio" name="soft5" value="a">  Carpetas<br>
+<input type="radio" name="soft5" value="b">  Archivos de texto<br>
+<input type="radio" name="soft5" value="c">  Tablas<br>
+<input type="radio" name="soft5" value="d">  Gráficos
+</div>
+
+
+<div class="question">
+6. ¿Qué es una tabla en una base de datos?<br>
+<input type="radio" name="soft6" value="a">  Un conjunto de bases de datos<br>
+<input type="radio" name="soft6" value="b">  Un lugar donde se guardan datos en filas y columnas<br>
+<input type="radio" name="soft6" value="c">  Un respaldo de información<br>
+<input type="radio" name="soft6" value="d">  Un programa auxiliar
+</div>
+
+
+<div class="question">
+7. ¿Cómo se llama cada fila de una tabla?<br>
+<input type="radio" name="soft7" value="a">  Campo<br>
+<input type="radio" name="soft7" value="b">  Registro<br>
+<input type="radio" name="soft7" value="c">  Atributo<br>
+<input type="radio" name="soft7" value="d">  Clave
+</div>
+
+
+<div class="question">
+8. ¿Cómo se llama cada columna de una tabla?<br>
+<input type="radio" name="soft8" value="a">  Registro<br>
+<input type="radio" name="soft8" value="b">  Relación<br>
+<input type="radio" name="soft8" value="c">  Campo<br>
+<input type="radio" name="soft8" value="d">  Archivo
+</div>
+
+
+<div class="question">
+9. ¿Para qué sirve la clave primaria?<br>
+<input type="radio" name="soft9" value="a">  Repetir información<br>
+<input type="radio" name="soft9" value="b">  Identificar de forma única un registro<br>
+<input type="radio" name="soft9" value="c">  Relacionar bases de datos<br>
+<input type="radio" name="soft9" value="d">  Crear copias de seguridad
+</div>
+
+
+<div class="question">
+10. ¿Qué es una clave foránea?<br>
+<input type="radio" name="soft10" value="a">  Una clave que no se usa<br>
+<input type="radio" name="soft10" value="b">  Una clave repetida<br>
+<input type="radio" name="soft10" value="c">  Una clave que relaciona tablas<br>
+<input type="radio" name="soft10" value="d">  Una contraseña
+</div>
+
+
+<div class="question">
+11. ¿Qué tipo de relación existe cuando un registro se asocia con varios registros de otra tabla?<br>
+<input type="radio" name="soft11" value="a">  Uno a uno<br>
+<input type="radio" name="soft11" value="b">  Muchos a muchos<br>
+<input type="radio" name="soft11" value="c">  Uno a muchos<br>
+<input type="radio" name="soft11" value="d">  Circular
+</div>
+
+
+<div class="question">
+12. ¿Qué es la normalización?<br>
+<input type="radio" name="soft12" value="a">  Un tipo de consulta<br>
+<input type="radio" name="soft12" value="b">  Un proceso para evitar duplicidad de datos<br>
+<input type="radio" name="soft12" value="c">  Una forma de eliminar tablas<br>
+<input type="radio" name="soft12" value="d">  Un respaldo automático
+</div>
+
+
+<div class="question">
+13. ¿Qué lenguaje se utiliza para trabajar con bases de datos relacionales?<br>
+<input type="radio" name="soft13" value="a">  HTML<br>
+<input type="radio" name="soft13" value="b">  CSS<br>
+<input type="radio" name="soft13" value="c">  SQL<br>
+<input type="radio" name="soft13" value="d">  JavaScript
+</div>
+
+
+<div class="question">
+14. ¿Qué sentencia SQL se utiliza para crear una base de datos o una tabla?<br>
+<input type="radio" name="soft14" value="a">  INSERT<br>
+<input type="radio" name="soft14" value="b">  SELECT<br>
+<input type="radio" name="soft14" value="c">  CREATE<br>
+<input type="radio" name="soft14" value="d">  DELETE
+</div>
+
+
+<div class="question">
+15. ¿Qué sentencia SQL se usa para consultar información?<br>
+<input type="radio" name="soft15" value="a">  UPDATE<br>
+<input type="radio" name="soft15" value="b">  DELETE<br>
+<input type="radio" name="soft15" value="c">  SELECT<br>
+<input type="radio" name="soft15" value="d">  DROP
+</div>
+
+
+<div class="question">
+16. ¿Cuál de las siguientes es una sentencia DML?<br>
+<input type="radio" name="soft16" value="a">  CREATE<br>
+<input type="radio" name="soft16" value="b">  ALTER<br>
+<input type="radio" name="soft16" value="c">  INSERT<br>
+<input type="radio" name="soft16" value="d">  DROP
+</div>
+
+
+<div class="question">
+17. ¿Qué es un respaldo (backup) de una base de datos?<br>
+<input type="radio" name="soft17" value="a">  Una tabla adicional<br>
+<input type="radio" name="soft17" value="b">  Una copia de seguridad de la información<br>
+<input type="radio" name="soft17" value="c">  Una consulta avanzada<br>
+<input type="radio" name="soft17" value="d">  Un tipo de clave
+</div>
+
+
+<div class="question">
+18. ¿Cuál es una buena práctica de seguridad en bases de datos?<br>
+<input type="radio" name="soft18" value="a">  Usar contraseñas débiles<br>
+<input type="radio" name="soft18" value="b">  Compartir usuarios<br>
+<input type="radio" name="soft18" value="c">  Realizar respaldos periódicos<br>
+<input type="radio" name="soft18" value="d">  Eliminar permisos
+</div>
+
+
+<div class="question">
+19. ¿Para qué se usan las bases de datos en aplicaciones?<br>
+<input type="radio" name="soft19" value="a">  Para diseñar interfaces<br>
+<input type="radio" name="soft19" value="b">  Para almacenar y gestionar información<br>
+<input type="radio" name="soft19" value="c">  Para crear imágenes<br>
+<input type="radio" name="soft19" value="d">  Para controlar el hardware
+</div>
+
+
+<div class="question">
+20. ¿Qué tecnología se usa comúnmente para conectar una página web con MySQL?<br>
+<input type="radio" name="soft20" value="a">  CSS<br>
+<input type="radio" name="soft20" value="b">  PHP<br>
+<input type="radio" name="soft20" value="c">  PowerPoint<br>
+<input type="radio" name="soft20" value="d">  Paint
+</div>
+<button type="button" onclick="calificarSoftware()">
+  Calificar Software
+</button>
+<div id="resSoftware"></div>
+
+    
+</form>
+
+</div>
+
+<script>
+function calificarSoftware(){
+  const respuestas = {
+    soft1:"b", soft2:"c", soft3:"c", soft4:"b", soft5:"c",
+    soft6:"b", soft7:"b", soft8:"c", soft9:"b", soft10:"c",
+    soft11:"c", soft12:"b", soft13:"c", soft14:"c", soft15:"c",
+    soft16:"c", soft17:"b", soft18:"c", soft19:"b", soft20:"b"
+  };
+
+  let correctas = 0;
+  let incorrectas = 0;
+
+  for(let p in respuestas){
+    let seleccion = document.querySelector(`input[name="${p}"]:checked`);
+    if(seleccion && seleccion.value === respuestas[p]){
+      correctas++;
+    } else {
+      incorrectas++;
+    }
+  }
+
+  document.getElementById("resSoftware").innerText =
+    `Correctas: ${correctas} | Incorrectas: ${incorrectas}`;
+}
+</script>
+
+
+
+<script>
+function calificarLengua(){
+  const respuestas = {
+    lengua1:"c", lengua2:"c", lengua3:"b", lengua4:"c", lengua5:"d",
+    lengua6:"b", lengua7:"c", lengua8:"b", lengua9:"c", lengua10:"d",
+    lengua11:"b", lengua12:"b", lengua13:"b", lengua14:"d", lengua15:"c",
+    lengua16:"d", lengua17:"b", lengua18:"c", lengua19:"c", lengua20:"c"
+  };
+
+  let correctas = 0;
+  let incorrectas = 0;
+
+  for (let p in respuestas){
+    let seleccion = document.querySelector(`input[name="${p}"]:checked`);
+    if(seleccion && seleccion.value === respuestas[p]){
+      correctas++;
+    } else {
+      incorrectas++;
+    }
+  }
+
+  document.getElementById("resLengua").innerText =
+    `Correctas: ${correctas} | Incorrectas: ${incorrectas}`;
+}
+</script>
+
+
+
+
+
+<script>
+function calificarQuimica(){
+  const respuestas = {
+    q1:"c", q2:"b", q3:"a", q4:"b", q5:"c",
+    q6:"b", q7:"c", q8:"b", q9:"b", q10:"c",
+    q11:"c", q12:"c", q13:"c", q14:"b", q15:"c",
+    q16:"b", q17:"c", q18:"d", q19:"b", q20:"c"
+  };
+
+  let correctas = 0;
+  let incorrectas = 0;
+
+  for (let q in respuestas) {
+    let seleccion = document.querySelector(`input[name="${q}"]:checked`);
+    if (seleccion && seleccion.value === respuestas[q]) {
+      correctas++;
+    } else {
+      incorrectas++;
+    }
+  }
+
+  document.getElementById("resultChemistry").innerText =
+    `Correctas: ${correctas} | Incorrectas: ${incorrectas}`;
+}
+</script>
+
+
+
+<script>
+function calificarIngles() {
+  const respuestas = {
+    e1:"c",e2:"b",e3:"b",e4:"b",e5:"c",e6:"b",e7:"c",e8:"b",e9:"a",e10:"b",
+    e11:"b",e12:"c",e13:"b",e14:"a",e15:"b",e16:"c",e17:"b",e18:"a",e19:"b",e20:"b"
+  };
+  let c=0,i=0;
+  for (let r in respuestas){
+    let s=document.querySelector(`input[name="${r}"]:checked`);
+    if(s && s.value===respuestas[r]) c++; else i++;
+  }
+  document.getElementById("resultEnglish").innerHTML=
+  "Correctas: "+c+" | Incorrectas: "+i;
+}
+</script>
+
+<script>
+function calificarSocial(){
+  const respuestas = {
+    s1:"b", s2:"b", s3:"b", s4:"b", s5:"b",
+    s6:"b", s7:"b", s8:"b", s9:"b", s10:"b",
+    s11:"b", s12:"b", s13:"b", s14:"b", s15:"b",
+    s16:"b", s17:"b", s18:"b", s19:"b", s20:"b"
+  };
+
+  let correctas = 0;
+  let incorrectas = 0;
+
+  for (let s in respuestas){
+    let seleccion = document.querySelector(`input[name="${s}"]:checked`);
+    if (seleccion && seleccion.value === respuestas[s]){
+      correctas++;
+    } else {
+      incorrectas++;
+    }
+  }
+
+  document.getElementById("resultSocial").innerText =
+    `Correctas: ${correctas} | Incorrectas: ${incorrectas}`;
+}
+</script>
+
+
+
+
+
+</body>
+</html>
+
+
+
